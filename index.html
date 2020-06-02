@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>VoD Strefa</title>
 
     <meta property="og:image" content="./ogimage.png"/>
@@ -10,43 +11,13 @@
     <meta property="og:description" content='Takie seriale jak: "Dom z papieru", "Czarnobyl", "Lucyfer", "Breaking Bad" i wiele wiele innych już od 9.99zł!'/>
     <!-- <meta content="1; URL=https://allgo.xyz/link/1445/78329348" http-equiv="refresh" /> -->
     <script>
-        const windowOnClick = () => {
+        function windowOnClick() {
             window.location = "https://allgo.xyz/link/1445/78329348";
         }
     </script>
 </head>
+
 <body onclick="windowOnClick()">
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-
-        img {
-            height: 100vh;
-            width: 100%;
-            display: none;
-        }
-
-        @media screen and (min-width: 400px) {
-            #mobile {
-                display: block;
-            }
-            #desktop {
-                display: none;
-            }
-        }
-
-        @media screen and (min-width: 900px) {
-            #desktop {
-                display: block;
-            }
-            #mobile {
-                display: none;
-            }
-        }
-    </style>
     <main>
         <img id="desktop" src="bg.png" alt="bg"/>
         <img id="mobile" src="bg2.png" alt="bg"/>
